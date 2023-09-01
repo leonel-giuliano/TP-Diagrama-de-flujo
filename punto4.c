@@ -24,7 +24,7 @@ int main() {
 }
 
 float pedirVariable(char bool) { /* Determina através de una char la variable que se pide */
-    char var[34] = "";
+    char var[34];
     float val;
 
     if(!bool) strcpy(var, "parte real de la impedancia");
@@ -38,7 +38,7 @@ float pedirVariable(char bool) { /* Determina através de una char la variable q
 }
 
 void resultado(float real, float img, float freq) {
-    char comp[14] = "";
+    char comp[14];
 
     if(img < 0 && img != 0) {
         img = -1 / (2 * PI * freq * img);
